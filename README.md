@@ -1,31 +1,18 @@
 # Python Code Overview
-
-## Description
-This Python script is designed to showcase various functionalities related to system information gathering, networking, and basic client-server communication. Please note that the code includes potentially harmful features and is provided here for educational purposes only.
+Esse e um codigo python3 criado no meu tempo livre, ele e um tipo de worm que tenta se espalhar pela rede.
 
 ## Functionalities
 
-### 1. System Information Gathering
-The script collects comprehensive system information, including platform details, boot time, CPU information, memory usage, disk information, and network details.
+### 1. Autocópia e Registro de Inicialização:
+O script copia a si mesmo para a pasta de inicialização do Windows e adiciona uma entrada de registro para garantir que seja executado na inicialização.
 
-### 2. Connection Server Class (`PERSISTENCE`)
-An empty class that may have been intended for implementing a persistence mechanism. It does not currently contain any specific functionality.
+### 2. Coleta de Informações do Sistema:
+O código coleta informações detalhadas sobre o sistema em que está sendo executado, incluindo informações sobre a CPU, memória, discos, rede, etc.
 
-### 3. Client Class (`CLIENT`)
-Handles the establishment of a connection to a remote server and the execution of commands received from the server. Key functionalities include sending data, executing shell commands, and managing the communication loop.
+### 3. Execução Remota de Comandos:
+O script permite a execução remota de comandos em sistemas infectados.
 
-### 4. Worm Functionalities
-The script includes sections for implementing worm functionalities targeting FTP, SSH, Telnet, MySQL, and shared folders. These functionalities involve scanning and potentially propagating content across a network.
-
-### 5. Persistence Mechanism
-Attempts to achieve persistence by copying itself to the Windows startup directory and adding a registry entry for autostart.
-
-### 6. Dynamic IP Enumeration
-The script attempts to iterate through IP addresses in the local network, suggesting a potential scanning mechanism.
-
-## Disclaimer and Usage
-**Caution:** This code contains functionalities that could potentially be misused for unauthorized and harmful activities. It is strongly advised not to run or distribute it for any unauthorized purposes. The provided information is for educational purposes only, and the code should be used responsibly and ethically.
-
-## Reporting
-If you encounter this code or similar code being used for malicious purposes, it is recommended to report it to appropriate authorities to prevent potential misuse.
+### 4. Worm
+O script tenta se espalhar para outros sistemas na rede local, explorando serviços como FTP, SSH, Telnet e MySQL usando credenciais padrão.
+Quando ele adentra em um servidor mysql ele faz uma copia do banco de dados para c:\\mysql
 
