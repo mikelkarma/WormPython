@@ -1,23 +1,10 @@
-import os
-import socket
-import time
 import base64
-import signal
+import socket
+import threading
 import subprocess
 import argparse
-import io
-import shutil
-import threading
-import platform
-from datetime import datetime
-import numpy as np
-import cv2
-import pygame
-from PIL import Image
-from pygame.locals import QUIT, KEYDOWN, K_ESCAPE
-import sys
-import PyInstaller.__main__
 import tabulate
+import os,sys
 
 
 __LOGO__ = """
