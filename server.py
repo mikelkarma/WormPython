@@ -13,7 +13,7 @@ __LOGO__ = """
 os.system('cls')
 os.system('cat logo.txt')
 
-__HELP_OVERALL__ = """usage: python3 sillyray.py command [--help] [--option OPTION]
+__HELP_OVERALL__ = """usage: python3 server.py command [--help] [--option OPTION]
 
 These are the commands available for usage:
 
@@ -24,7 +24,7 @@ You can further get help on available commands by supplying
 will print help manual for generate commmand
 """
 
-__HELP_BIND__   = """usage: python3 sillyrat.py bind [--address ADDRESS] [--port PORT]
+__HELP_BIND__   = """usage: python3 server.py bind [--address ADDRESS] [--port PORT]
 
     Args              Description
     -h, --help        Show Help for Bind command
